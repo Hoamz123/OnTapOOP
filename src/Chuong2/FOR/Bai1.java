@@ -1,5 +1,7 @@
 package Chuong2.FOR;
 
+import Chuong2.Calculator;
+
 import java.util.Scanner;
 
 public class Bai1 {
@@ -11,7 +13,6 @@ public class Bai1 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         double res = 1f;
-
         for(int i=2;i<=n;i++){
             res += 1.0 / gt(i);
         }

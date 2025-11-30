@@ -91,7 +91,7 @@ class TaiKhoanVay extends TaiKhoan{
     }
 }
 
-public class Bai5 {
+public class Bai4 {
     public static void main(String[] args) {
 //        TaiKhoanTietKiem userA = new TaiKhoanTietKiem("01234","HOA",1000000,0.1);
 //        userA.rutTien(500000);

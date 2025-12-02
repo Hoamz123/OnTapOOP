@@ -1,4 +1,4 @@
-package Chuong2.IF_SWITH;
+package Chuong2.IF_SWITCH;
 
 import java.util.Map;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Chuong4;
+package Chuong4.Abstract;
 
 abstract class HinhHoc {
     private String tenHinh;

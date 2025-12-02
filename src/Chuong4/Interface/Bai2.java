@@ -16,8 +16,6 @@ Trong chương trình chính:
 + Gọi cả phương thức kế thừa: connect() và phương thức từ interface: reboot() trên đối tượng này.
 + Thử lưu trữ đối tượng này trong một tham chiếu kiểu NetworkDevice và một một tham chiếu kiểu Restartable.
  */
-
-
 interface Restartable{
     void reboot();
 }
@@ -53,18 +51,17 @@ class Router extends NetworkDevice implements Restartable{
 
 public class Bai2 {
     public static void main(String[] args) {
-        Router router = new Router("192.168.1.1","NetM1");
-        router.connect();
-        router.reboot();
-
-        NetworkDevice networkDevice = new Router("192.168.1.1","NetM1");
-        networkDevice.connect();
-//        networkDevice.reboot();//ko goi dc o day vi trong cha (NetworkDevice ko co reboot)
-
-
-        Restartable restartable = new Router("192.168.1.1","NetM1");
-        restartable.reboot();
-//        restartable.connect();//ko goi dc vi trong Restartable ko co phuong thuc nay
+//        Router router = new Router("192.168.1.1","NetM1");
+//        router.connect();
+//        router.reboot();
+//
+//        NetworkDevice networkDevice = new Router("192.168.1.1","NetM1");//upcutting
+//        networkDevice.connect();
+////        networkDevice.reboot();//ko goi dc o day vi trong cha (NetworkDevice ko co reboot)
+//
+//        Restartable restartable = new Router("192.168.1.1","NetM1");
+//        restartable.reboot();
+////        restartable.connect();//ko goi dc vi trong Restartable ko co phuong thuc nay
 
     }
 }

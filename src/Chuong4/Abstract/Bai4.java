@@ -1,4 +1,4 @@
-package Chuong4;
+package Chuong4.Abstract;
 
 /*
 Tạo lớp TaiKhoan với các thuộc tính: soTaiKhoan (String), tenChuTaiKhoan (String), soDu (double).
@@ -39,7 +39,7 @@ abstract class TaiKhoan{
     }
 
     private boolean kiemTraSoDu(double soTienCanRut){
-        return this.soDu > soTienCanRut;
+        return this.soDu >= soTienCanRut;
     }
 }
 

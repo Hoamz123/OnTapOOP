@@ -1,4 +1,4 @@
-package Chuong4;
+package Chuong4.Abstract;
 
 /*
 Tạo lớp Person (Người) với các thuộc tính: ten (String), tuoi (int), gioiTinh (boolean), diaChi (String).

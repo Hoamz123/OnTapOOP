@@ -21,16 +21,28 @@ class TestCustomException {
     }
 }
 
+
+@FunctionalInterface
+interface Method{
+    void pay();
+}
+
+
+
 public class Vidu {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int age = sc.nextInt();
-        try {
-            TestCustomException.validate(age);
-        } catch (InvalidAgeException e) {
-            System.out.println("Xảy ra ngoại lệ: " + e.getMessage());
-        }
-        System.out.println("Phần còn lại của mã...");
+
+        Method method = () -> System.out.println("hwa");
+        method.pay();
+
+//        Scanner sc = new Scanner(System.in);
+//        int age = sc.nextInt();
+//        try {
+//            TestCustomException.validate(age);
+//        } catch (InvalidAgeException e) {
+//            System.out.println("Xảy ra ngoại lệ: " + e.getMessage());
+//        }
+//        System.out.println("Phần còn lại của mã...");
     }
 //        Scanner sc = new Scanner(System.in);
 //        try (sc) {

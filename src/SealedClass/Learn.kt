@@ -7,12 +7,12 @@ sealed class State{
 }
 
 fun <T> genericType(param : T) : T{
-    return param;
+    return param
 }
 
 class Box<T>(private val item : T){
     fun getName() : T{
-        return item;
+        return item
     }
 }
 
@@ -23,18 +23,36 @@ fun fakeData() : Result<Int>{
     return Result.Success((1 .. 10).random())
 }
 
-fun main() {
-    val state = State.Loading
-    checkState(state)
+fun method(a : Int,b : Int,onClick :(Int,Int) -> Int) : Int{
+    val res = onClick(a,b);
+    return res;
+}
 
-    fakeData().onSuccess {number ->
-        println(number)
-    }.onError {
-        println("Something wrong")
-    }.map { it * 10 }
-        .onSuccess {
-            println(it)
-        }
+data class User(
+    var name : String,
+    var age : Int
+)
+
+fun main() {
+
+
+    val user1 = User("hwa",12)
+    val user2 = User("hwa",12)
+
+
+
+    println(user1)
+//    val state = State.Loading
+//    checkState(state)
+//
+//    fakeData().onSuccess {number ->
+//        println(number)
+//    }.onError {
+//        println("Something wrong")
+//    }.map { it * 10 }
+//        .onSuccess {
+//            println(it)
+//        }
 //    println(genericType(10))
 
 //    val box = Box("hoa");
@@ -43,11 +61,7 @@ fun main() {
 //    val pair = Pair("hoa",12)
 //    println(pair.key)
 //    println(pair.value)
-
-
-
 }
-
 fun String.toStringCustom() : String{
     return "Name $this"
 }
